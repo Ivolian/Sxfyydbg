@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <EditText
+             android:id="@+id/et_planchild"
+             android:layout_width="match_parent"
+             android:layout_height="220dp"
+             
+             
+             
+             android:background="@drawable/noti_mid_bg"
+             android:gravity="top|left"
+             android:textColor="#333333"
+             android:text=""
+             android:textSize="15sp"
+             android:padding="5dp"
+             android:src="@drawable/plan_detail_expand_image"/>
+
+    <!--  <TextView
+        android:id="@+id/tv_ldps_tj"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/et_planchild"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/plan_detail_item_bg"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="保      存" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_ldps_tj"
+        android:layout_centerHorizontal="true"
+        android:text="" /> -->
+
+</RelativeLayout>

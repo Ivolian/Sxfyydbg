@@ -1,0 +1,422 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+     >
+    <include 
+        android:id="@+id/title"
+        layout="@layout/title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <LinearLayout style="@style/main_linear_layout_bg" >
+
+            <FrameLayout
+                android:id="@+id/fra_ggxx"
+                style="@style/main_frame_layout_bg"
+                android:layout_weight="1"
+                android:background="@drawable/main_tzgg_bg" >
+
+                <LinearLayout
+                    style="@style/main_frame1_linear_layout_bg"
+                    android:layout_gravity="center_horizontal|center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ggxx" />
+
+                    <TextView
+                        style="@style/main_tv_bg"
+                        android:layout_marginTop="5dp"
+                        android:text="公告消息" />
+                </LinearLayout>
+            </FrameLayout>
+             <FrameLayout
+                android:id="@+id/fra_csx"
+                style="@style/main_frame_layout_bg"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/main_csx_bg" >
+
+                <LinearLayout
+                    style="@style/main_frame1_linear_layout_bg"
+                    android:layout_gravity="center_horizontal|center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/csxti_log" />
+
+                    <TextView
+                        style="@style/main_tv_bg"
+                        android:layout_marginTop="10dp"
+                        android:text="超审限" />
+                </LinearLayout>
+            </FrameLayout>
+             <FrameLayout
+                android:id="@+id/fra_qjdb"
+                style="@style/main_frame_layout_bg"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/main_qjdb_bg" >
+
+                <LinearLayout
+                    style="@style/main_frame1_linear_layout_bg"
+                    android:layout_gravity="center_horizontal|center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/plan_leave" />
+
+                    <TextView
+                        style="@style/main_tv_bg"
+                        android:layout_marginTop="10dp"
+                        android:text="请假待办" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_marginTop="10dp"
+            style="@style/main_linear_layout_bg" >
+
+            <FrameLayout
+                android:id="@+id/fra_gcdb"
+                style="@style/main_frame_layout_bg"
+                android:layout_weight="1"
+                android:background="@drawable/main_ggdb_bg" >
+
+                <LinearLayout
+                    style="@style/main_frame1_linear_layout_bg"
+                    android:layout_gravity="center_horizontal|center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/gcdb_log" />
+
+                    <TextView
+                        style="@style/main_tv_bg"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="公出待办" />
+                </LinearLayout>
+            </FrameLayout>
+             <FrameLayout
+                android:id="@+id/fra_nbsw"
+                style="@style/main_frame_layout_bg"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/main_nbsw_bg" >
+
+                <LinearLayout
+                    style="@style/main_frame1_linear_layout_bg"
+                    android:layout_gravity="center_horizontal|center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/nbsw_log" />
+
+                    <TextView
+                        style="@style/main_tv_bg"
+                        android:layout_marginTop="10dp"
+                        android:text="内部收文" />
+                </LinearLayout>
+            </FrameLayout>
+             <FrameLayout
+                android:id="@+id/fra_ycdb"
+                style="@style/main_frame_layout_bg"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/main_ycdb_bg" 
+                android:visibility="gone">
+
+                <LinearLayout
+                    style="@style/main_frame1_linear_layout_bg"
+                    android:layout_gravity="center_horizontal|center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ycdb_log" />
+
+                    <TextView
+                        style="@style/main_tv_bg"
+                        android:layout_marginTop="10dp"
+                        android:text="用车待办" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_marginTop="10dp"
+            style="@style/main_linear_layout_bg" >
+
+            <FrameLayout
+                android:id="@+id/fra_hyssq"
+                style="@style/main_frame_layout_bg"
+                android:layout_weight="1"
+                android:background="@drawable/main_hyssq_bg" >
+
+                <LinearLayout
+                    style="@style/main_frame1_linear_layout_bg"
+                    android:layout_gravity="center_horizontal|center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/hyssq" />
+
+                    <TextView
+                        style="@style/main_tv_bg"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="会议室申请" />
+                </LinearLayout>
+            </FrameLayout>
+             <FrameLayout
+                android:id="@+id/fra_nbfw"
+                style="@style/main_frame_layout_bg"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/main_nbfw_bg" >
+
+                <LinearLayout
+                    style="@style/main_frame1_linear_layout_bg"
+                    android:layout_gravity="center_horizontal|center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/nbfw_log" />
+
+                    <TextView
+                        style="@style/main_tv_bg"
+                        android:layout_marginTop="10dp"
+                        android:text="内部发文" />
+                </LinearLayout>
+            </FrameLayout>
+             <FrameLayout
+                android:id="@+id/fra_xwzx"
+                style="@style/main_frame_layout_bg"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/main_xwzx_bg" >
+
+                <LinearLayout
+                    style="@style/main_frame1_linear_layout_bg"
+                    android:layout_gravity="center_horizontal|center_vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/gdmz" />
+
+                    <TextView
+                        style="@style/main_tv_bg"
+                        android:layout_marginTop="10dp"
+                        android:text="新闻中心" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="170dp" 
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00768A"
+                android:layout_gravity="top"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp" />
+            <ImageView
+                android:id="@+id/main_left_image"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/main_left_bg"
+                android:layout_gravity="center_horizontal|center_vertical" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="top"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="@string/gonggao" />
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sms_long"
+                android:layout_gravity="top|right"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="0" />
+            
+            
+        </FrameLayout>
+
+       
+
+        <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            
+            android:layout_marginLeft="5dp" >
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0FDAE7"
+                android:layout_gravity="top"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp" />
+            <ImageView
+                android:id="@+id/main_right_image"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/main_right_bg"
+                android:layout_gravity="center_horizontal|center_vertical" />
+             <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="@string/daiban" />
+              <TextView
+                android:id="@+id/tv_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sms_long"
+                android:layout_gravity="top|right"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="0" />
+
+        </FrameLayout>
+         
+    
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        
+        android:layout_below="@+id/LinearLayout1"
+        android:orientation="horizontal"
+        >
+
+        <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="170dp" 
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#47D463"
+                android:layout_gravity="top"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp" />
+            <ImageView
+                android:id="@+id/hyssq_image"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/hyssq"
+                android:layout_gravity="center_horizontal|center_vertical" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="top"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="会议室申请" />
+           
+            
+        </FrameLayout>
+
+       
+
+        <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            
+            android:layout_marginLeft="5dp" >
+            <ImageView
+                android:id="@+id/imageView41"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#24AD91"
+                android:layout_gravity="top"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp" />
+            <ImageView
+                android:id="@+id/gdbz_image"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/gdmz"
+                
+                android:layout_gravity="center_horizontal|center_vertical" />
+             <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="新闻中心" />
+             
+
+        </FrameLayout> -->
+    
+
+
+</RelativeLayout>

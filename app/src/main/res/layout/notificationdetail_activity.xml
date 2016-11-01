@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+    <include 
+        android:id="@+id/title"
+        layout="@layout/title"/>
+
+    
+
+    <RelativeLayout
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+
+        android:layout_margin="5dp"
+        android:background="@drawable/noti_mid_bg">
+
+        <TextView
+            android:id="@+id/tv_noti_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center_vertical|center_horizontal"
+            style="@style/text_style"
+            android:text="TextView" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/tv_noti_title"
+            android:layout_marginTop="10dp"
+            android:background="#eeeeee" />
+        <TextView
+            android:id="@+id/tv_noti_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view1"
+            android:layout_above="@+id/lin_notice_buttom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="top"
+            android:padding="5dp"
+            style="@style/text_style"
+            android:singleLine="false" 
+            android:scrollbars="vertical"  
+            android:text="TextView" />
+        <LinearLayout
+            android:id="@+id/lin_notice_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="下载附件："
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/lv_xiazai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:descendantFocusability="afterDescendants"
+                android:divider="#14b2ce"
+                android:dividerHeight="1px"
+                android:listSelector="#14b2ce" />
+
+        </LinearLayout>
+</RelativeLayout>
+        
+
+</RelativeLayout>

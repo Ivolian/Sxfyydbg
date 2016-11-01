@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+    <include 
+        android:id="@+id/title"
+        layout="@layout/title"/>
+    <RelativeLayout
+         style="@style/rela_style_bg"
+         android:layout_below="@+id/title" >
+
+         <ScrollView
+             android:id="@+id/scroll_nbsw"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:descendantFocusability="afterDescendants" >
+
+             <LinearLayout style="@style/lin_ccs_ver_bg" >
+
+                 <LinearLayout style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="申请日期" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <TextView
+                         android:id="@+id/tv_qjrq"
+                         style="@style/ccsqb_et_bg" />
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="所在部门" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <TextView
+                         android:id="@+id/tv_qjbm"
+                         style="@style/ccsqb_et_bg" />
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="姓       名" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <TextView
+                         android:id="@+id/tv_qjrxm"
+                         style="@style/ccsqb_et_bg" />
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="职       务" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <TextView
+                         android:id="@+id/tv_qjrzwxx"
+                         style="@style/ccsqb_et_bg" />
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="休假种类" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <TextView
+                         android:id="@+id/tv_qjzl"
+                         style="@style/ccsqb_et_bg" />
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="开始时间" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <TextView
+                         android:id="@+id/tv_qjks"
+                         style="@style/ccsqb_et_bg" />
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+                 <LinearLayout style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="结束时间" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <TextView
+                         android:id="@+id/tv_qjjs"
+                         style="@style/ccsqb_et_bg" />
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+                 <LinearLayout style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="请假事由" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <EditText
+                         android:id="@+id/et_qjsy"
+                         style="@style/ccsqb_et_bg" 
+                         android:focusable="false"/>
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 
+                 <LinearLayout style="@style/lin_ccs_hor_jy_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="部门领\n导意见" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <TextView
+                         android:id="@+id/tv_bmldyj"
+                         style="@style/ccsqb_et_jy_bg" />
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout style="@style/lin_ccs_hor_jy_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="院领导\n意见" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <TextView
+                         android:id="@+id/tv_yldyj"
+                         style="@style/ccsqb_et_jy_bg"/>
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout style="@style/lin_ccs_hor_jy_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="人事处\n意见" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <TextView
+                         android:id="@+id/tv_rscyj"
+                         style="@style/ccsqb_et_jy_bg"/>
+                 </LinearLayout>
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout 
+                     android:visibility="gone"
+                     style="@style/lin_ccs_hor_jy_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="备     注" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <EditText
+                         android:id="@+id/et_bz"
+                         style="@style/ccsqb_et_jy_bg"
+                         android:focusable="false"/>
+                 </LinearLayout>
+
+                 <View
+                     android:visibility="gone"
+                     style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout
+                     android:id="@+id/lin_submit"
+                     style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         android:id="@+id/tv_qjsq_cklzjl"
+                         style="@style/tv_submit_type_bg"
+                         android:text="查看流转记录" />
+
+                     <TextView
+                         android:id="@+id/tv_qjsq_submit"
+                         style="@style/tv_submit_type_bg"
+                         android:text="送   出"/>
+
+                 </LinearLayout>
+             </LinearLayout>
+         </ScrollView>
+     </RelativeLayout>
+
+</RelativeLayout>

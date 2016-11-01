@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <code>000000</code>
+    <msg>请求成功</msg>
+    <randCode>XHocVH</randCode>
+    <randCodeSec></randCodeSec>
+    <loginBusiType></loginBusiType>
+    <time>20161101134141</time>
+    <parameters>
+        <parameter name="message"><![CDATA[0]]></parameter>
+        <parameter name="result"><![CDATA[]]></parameter>
+    </parameters>
+    <seqM></seqM>
+    <secM><![CDATA[]]></secM>
+    <seqD></seqD>
+    <seqR></seqR>
+</response>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+    <include 
+        android:id="@+id/title"
+        layout="@layout/title"/>
+    <RelativeLayout
+        android:id="@+id/rela1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:background="@drawable/login_shape_bg"
+        android:layout_marginTop="60px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        
+         >
+
+        
+        <TextView
+            android:id="@+id/tv_logininfo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="5dp"
+            android:background="@drawable/login_edit_name_bg"
+            android:text="" /> 
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+             android:layout_below="@+id/tv_logininfo">
+            
+         <Button
+             android:id="@+id/login_cancel"
+             android:layout_width="match_parent"
+             android:layout_height="48dp"
+             android:background="@drawable/login_btn_bg"
+             android:textSize="20dp"
+             android:textColor="@color/white"
+             android:text="注    销" />
+        </LinearLayout>
+        <View
+            android:id="@+id/viewlogin"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            
+            
+             android:layout_below="@+id/linear3">
+        </View>
+
+        
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

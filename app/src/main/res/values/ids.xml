@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<item type="id" name="titleName">false</item>
+	<item type="id" name="titleSub">false</item>
+	<item type="id" name="titleBack">false</item>
+</resources>

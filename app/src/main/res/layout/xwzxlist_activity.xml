@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+
+   <include 
+        android:id="@+id/title"
+        layout="@layout/title"/>
+
+   
+    <RelativeLayout
+        android:id="@+id/rela2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/noti_mid_bg" >
+
+        <ListView
+            android:id="@+id/lv_xwzx_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:divider="#14b2ce"
+            android:dividerHeight="1px"
+            android:listSelector="#14b2ce"
+             >
+        </ListView>
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/lv_xwzx_list"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#14b2ce" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

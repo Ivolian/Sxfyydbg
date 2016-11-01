@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+    <include 
+        android:id="@+id/title"
+        layout="@layout/title"/>
+
+    <RelativeLayout
+         style="@style/rela_style_bg"
+         android:layout_below="@+id/title" >
+
+         <ScrollView
+             android:id="@+id/scroll_nbsw"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:descendantFocusability="afterDescendants" >
+
+             <LinearLayout style="@style/lin_ccs_ver_bg" >
+
+                 <LinearLayout 
+                     android:background="#F7F7F7"
+                     style="@style/lin_px_hor_bg" >
+                     <TextView
+                         android:id="@+id/tv_qjrq"
+                         style="@style/hys_top_tv_bg" 
+                         android:text="*预定三天以上，请联系业务部门"/>
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="申请人" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <TextView
+                         android:id="@+id/tv_sqr"
+                         style="@style/ccsqb_et_bg" />
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="所在部门" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <EditText
+                         android:id="@+id/et_sqrbm"
+                         style="@style/ccsqb_et_bg" 
+                         android:focusable="false"/>
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="申请日期" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <TextView
+                         android:id="@+id/tv_sqrq"
+                         style="@style/ccsqb_et_bg" />
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="电    话" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <EditText
+                         android:id="@+id/et_sqrdh"
+                         style="@style/ccsqb_et_bg" 
+                         android:inputType="phone"/>
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="领导是否参加" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <Spinner
+                        android:id="@+id/sp_sfldcj"
+                        style="@style/ccsqb_sp_other_bg"
+                        android:padding="1.5dp" />
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+                 <LinearLayout style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="参会人数" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <EditText
+                         android:id="@+id/et_chrs"
+                         style="@style/ccsqb_et_bg" 
+                         android:inputType="number"/>
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="开始时间" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <TextView
+                         android:id="@+id/tv_ksrq"
+                         style="@style/ccsqb_tv_date_bg"
+                         android:layout_marginLeft="5dp" />
+
+                     <TextView
+                         android:id="@+id/tv_kssj"
+                         style="@style/ccsqb_tv_time_bg"
+                         android:layout_marginLeft="5dp" />
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="结束时间" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <TextView
+                         android:id="@+id/tv_jsrq"
+                         style="@style/ccsqb_tv_date_bg"
+                         android:layout_marginLeft="5dp" />
+
+                     <TextView
+                         android:id="@+id/tv_jssj"
+                         style="@style/ccsqb_tv_time_bg"
+                         android:layout_marginLeft="5dp" />
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+                 <LinearLayout style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="会议室" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <TextView
+                         android:id="@+id/tv_hysxx"
+                         style="@style/ccsqb_et_bg" 
+                         android:hint="点击选择会议室"/>
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 
+                 <LinearLayout style="@style/lin_ccs_hor_jy_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="申请事由" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <EditText
+                         android:id="@+id/et_sqsy"
+                         style="@style/ccsqb_et_jy_bg" />
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout 
+                     style="@style/lin_ccs_hor_jy_bg" >
+
+                     <TextView
+                         style="@style/ccsqb_tv_bg"
+                         android:text="备     注" />
+
+                     <View style="@style/ccsqb_view_bg" />
+
+                     <EditText
+                         android:id="@+id/et_bz"
+                         style="@style/ccsqb_et_jy_bg"/>
+                 </LinearLayout>
+
+                 <View style="@style/ccsqb_view_hor_bg" />
+
+                 <LinearLayout
+                     android:id="@+id/lin_submit"
+                     style="@style/lin_px_hor_bg" >
+
+                     <TextView
+                         android:id="@+id/tv_save"
+                         style="@style/tv_submit_type_bg"
+                         android:text="保       存" />
+
+                 </LinearLayout>
+             </LinearLayout>
+         </ScrollView>
+     </RelativeLayout>
+    
+
+</RelativeLayout>
+<!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:layout_margin="5dp"
+        android:background="@drawable/noti_mid_bg" >
+
+        <RelativeLayout
+            android:id="@+id/re_hyslb_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#F7F7F7" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:text="会议室申请"
+                android:textColor="#27B8D2"
+                android:textSize="17sp" />
+
+
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/xzhyssq_aj_bg"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="10dp"
+                android:ems="4"
+                android:text="保    存"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/textView1"
+                android:text="*预定三天以上，请联系业务部门。"
+                android:textColor="#EF4848"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/re_hyslb_title"
+            android:layout_alignRight="@+id/re_hyslb_title"
+            android:layout_below="@+id/re_hyslb_title"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    style="@style/text_style"
+                    android:text="申请人：" />
+
+                <TextView
+                    android:id="@+id/tv_sqr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="5dp"
+                    android:layout_toRightOf="@+id/textView3"
+                    android:background="#ffffff"
+                    style="@style/text_style"
+                    android:ems="8"
+                    />
+                
+            </RelativeLayout>
+            
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:layout_below="@+id/linearLayout1"
+            android:background="#DCDCDC" />
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/re_hyslb_title"
+            android:layout_alignRight="@+id/re_hyslb_title"
+            android:layout_below="@+id/view1"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    style="@style/text_style"
+                    android:text="申请人部门：" />
+
+                <EditText
+                    android:id="@+id/et_sqrbm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="5dp"
+                    android:layout_toRightOf="@+id/textView5"
+                    android:background="#ffffff"
+                    style="@style/text_style"
+                    android:focusable="false"
+                    android:hint="请输入申请人部门"
+                     >
+
+                    
+                </EditText>
+                
+            </RelativeLayout>
+            
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:layout_below="@+id/linearLayout2"
+            android:background="#DCDCDC" />
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/re_hyslb_title"
+            android:layout_alignRight="@+id/re_hyslb_title"
+            android:layout_below="@+id/view2"
+            android:orientation="horizontal" >
+           <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    style="@style/text_style"
+                    android:text="申请日期：" />
+
+                <TextView
+                    android:id="@+id/tv_sqrq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="5dp"
+                    android:layout_toRightOf="@+id/textView6"
+                    android:background="#ffffff"
+                    style="@style/text_style"
+                    android:ems="12"
+                    />
+                
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:layout_below="@+id/linearLayout3"
+            android:background="#DCDCDC" />
+         <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/re_hyslb_title"
+            android:layout_alignRight="@+id/re_hyslb_title"
+            android:layout_below="@+id/view3"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    style="@style/text_style"
+                    android:text="申请人电话：" />
+
+                <EditText
+                    android:id="@+id/et_sqrdh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="5dp"
+                    android:layout_toRightOf="@+id/textView7"
+                    android:background="#ffffff"
+                    style="@style/text_style"
+                    android:hint="请输入申请人电话"
+                    android:inputType="phone"
+                     >
+
+                    
+                </EditText>
+                
+            </RelativeLayout>
+            
+        </LinearLayout>
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:layout_below="@+id/linearLayout4"
+            android:background="#DCDCDC" />
+         <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/re_hyslb_title"
+            android:layout_alignRight="@+id/re_hyslb_title"
+            android:layout_below="@+id/view4"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    style="@style/text_style"
+                    android:text="是否领导参加：" />
+
+                <Spinner
+                    android:id="@+id/sp_sfldcj"
+                    android:layout_width="95dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="5dp"
+                    android:layout_toRightOf="@+id/textView8"
+                    android:background="#ffffff"
+                    android:textColor="#000000"
+                    
+                     />
+                
+            </RelativeLayout>
+            
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:layout_below="@+id/linearLayout5"
+            android:background="#DCDCDC" />
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/re_hyslb_title"
+            android:layout_alignRight="@+id/re_hyslb_title"
+            android:layout_below="@+id/view5"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp">
+                 <TextView
+                    android:id="@+id/textView116"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#EF4848"
+                    android:textSize="12sp"
+                    android:text="*" />
+                <TextView
+                    android:id="@+id/textView64"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView116"
+                    style="@style/text_style"
+                    android:text="参会人数：" />
+
+                <EditText
+                    android:id="@+id/et_chrs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="5dp"
+                    android:layout_toRightOf="@+id/textView64"
+                    android:background="#ffffff"
+                    style="@style/text_style"
+                    android:hint="请输入参会人数"
+                    android:inputType="number"
+                     >
+
+                    
+                </EditText>
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:id="@+id/view6"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:layout_below="@+id/linearLayout6"
+            android:background="#DCDCDC" />
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/re_hyslb_title"
+            android:layout_alignRight="@+id/re_hyslb_title"
+            android:layout_below="@+id/view6"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp">
+                 <TextView
+                    android:id="@+id/textView117"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#EF4848"
+                    android:textSize="12sp"
+                    android:text="*" />
+                <TextView
+                    android:id="@+id/textView65"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView117"
+                    style="@style/text_style"
+                    android:text="开始时间：" />
+
+                <TextView
+                    android:id="@+id/tv_ksrq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_toRightOf="@+id/textView65"
+                    android:background="@drawable/noti_mid_bg"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:ems="5"
+                    style="@style/text_style"
+                    android:hint="选择日期"
+                     />
+                <TextView
+                    android:id="@+id/tv_kssj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_toRightOf="@+id/tv_ksrq"
+                    android:background="@drawable/noti_mid_bg"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:ems="4"
+                    style="@style/text_style"
+                    android:hint="选择时间"
+                     />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:id="@+id/view7"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:layout_below="@+id/linearLayout7"
+            android:background="#DCDCDC" />
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/re_hyslb_title"
+            android:layout_alignRight="@+id/re_hyslb_title"
+            android:layout_below="@+id/view7"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp">
+                 <TextView
+                    android:id="@+id/textView118"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#EF4848"
+                    android:textSize="12sp"
+                    android:text="*" />
+                <TextView
+                    android:id="@+id/textView66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView118"
+                    style="@style/text_style"
+                    android:text="结束时间：" />
+
+                <TextView
+                    android:id="@+id/tv_jsrq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_toRightOf="@+id/textView66"
+                    android:background="@drawable/noti_mid_bg"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:ems="5"
+                    style="@style/text_style"
+                    android:hint="选择日期"
+                     />
+                <TextView
+                    android:id="@+id/tv_jssj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_toRightOf="@+id/tv_jsrq"
+                    android:background="@drawable/noti_mid_bg"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:ems="4"
+                    style="@style/text_style"
+                    android:hint="选择时间"
+                     />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:id="@+id/view8"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:layout_below="@+id/linearLayout8"
+            android:background="#DCDCDC" />
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@+id/re_hyslb_title"
+            android:layout_alignRight="@+id/re_hyslb_title"
+            android:layout_below="@+id/view8"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp">
+                 <TextView
+                    android:id="@+id/textView119"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#EF4848"
+                    android:textSize="12sp"
+                    android:text="*" />
+                <TextView
+                    android:id="@+id/textView67"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView119"
+                    style="@style/text_style"
+                    android:text="会议室：" />
+
+                <TextView
+                    android:id="@+id/tv_hysxx"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:padding="3dp"
+                    android:gravity="center_vertical"
+                    android:layout_toRightOf="@+id/textView67"
+                    android:background="#eeeeee"
+                    style="@style/text_style"
+                    android:text=""
+                    android:hint="选择会议室"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:id="@+id/view10"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:layout_below="@+id/linearLayout9"
+            android:background="#DCDCDC" />
+        <LinearLayout
+            android:id="@+id/linearLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/re_hyslb_title"
+            android:layout_alignRight="@+id/re_hyslb_title"
+            android:layout_below="@+id/view10"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    style="@style/text_style"
+                    android:text="申请\n事由" />
+
+                <EditText
+                    android:id="@+id/et_sqsy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:layout_toRightOf="@+id/textView31"
+                    android:background="@drawable/noti_mid_bg"
+                    android:layout_margin="5dp"
+                    style="@style/edittext_style"
+                    android:hint="请输入申请事由"
+                     >
+
+                    
+                </EditText>
+                
+            </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                
+                android:background="#DCDCDC" />
+            <LinearLayout
+                android:id="@+id/linearLayout12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    style="@style/text_style"
+                    android:text="备注" />
+
+                <EditText
+                    android:id="@+id/et_bz"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:layout_toRightOf="@+id/textView32"
+                    android:background="@drawable/noti_mid_bg"
+                    android:layout_margin="5dp"
+                    style="@style/edittext_style"
+                    android:hint="请输入备注信息"
+                     >
+
+                    
+                </EditText>
+                
+            </RelativeLayout>
+            </LinearLayout>
+            
+        </LinearLayout>
+    </RelativeLayout> -->

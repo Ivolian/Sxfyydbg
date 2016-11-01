@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="unicorn.withub.sxfyydbg">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="unicorn.withub.sxfyydbg.application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/zmbs"
+        android:label="@string/app_name"
+        android:logo="@drawable/login"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="unicorn.withub.sxfyydbg.activity.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="unicorn.withub.sxfyydbg.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="unicorn.withub.sxfyydbg.activity.DbsxListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="unicorn.withub.sxfyydbg.activity.NotificationListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <!-- <activity-alias
+            android:name="TagetNotificationListActivity"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/notice"
+            android:targetActivity="com.withub.sxfyydbg.activity.NotificationListActivity"
+            android:label="@string/app_name1" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias> -->
+        <activity
+            android:name="unicorn.withub.sxfyydbg.activity.NotificationDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="unicorn.withub.sxfyydbg.activity.PlanListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="unicorn.withub.sxfyydbg.activity.NbfwActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="unicorn.withub.sxfyydbg.activity.NbswActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="unicorn.withub.sxfyydbg.activity.HyslbActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="unicorn.withub.sxfyydbg.activity.XzhysActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="unicorn.withub.sxfyydbg.activity.InputHyssqActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="unicorn.withub.sxfyydbg.activity.ZwDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="unicorn.withub.sxfyydbg.activity.QjsqActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="unicorn.withub.sxfyydbg.activity.YcsqActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="unicorn.withub.sxfyydbg.activity.TjlcActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="unicorn.withub.sxfyydbg.activity.HdxzActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="unicorn.withub.sxfyydbg.activity.CklzjlActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <service
+            android:name="unicorn.withub.sxfyydbg.service.TimeService"
+            android:enabled="true" />
+        <receiver
+            android:name="unicorn.withub.sxfyydbg.broadcastreceiver.TimeReceiver"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+
+</manifest>

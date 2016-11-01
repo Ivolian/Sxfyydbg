@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+    <include 
+        android:id="@+id/title"
+        layout="@layout/title"/>
+    <RelativeLayout
+        style="@style/rela_ryxz_bg"
+        android:layout_below="@+id/title" >
+
+        <LinearLayout
+            android:id="@+id/rela_xzry_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bmxz" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="1.5dp"
+                    android:orientation="vertical" >
+
+                    <Spinner
+                        android:id="@+id/sp_bmxz"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:background="#F1F2EC" />
+                    <View style="@style/ccsqb_view_hor_bg" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_submit"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/confrim" />
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1.5dp"
+                android:layout_marginRight="1.5dp"
+                android:background="#797778"/> 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rela_xzry_head"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="1.5dp"
+                    android:background="@drawable/dxzry_top"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/iv_dxz"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/dxzry_imge" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/iv_dxz"
+                        android:gravity="center"
+                        android:text="当前部门人员"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/lv_ryxz_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1.5dp"
+                    android:layout_marginLeft="1.5dp"
+                    android:background="#E9ECF5">
+                </ListView>
+
+            </LinearLayout>
+            <View style="@style/ccsqb_view_bg" />
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="1.5dp"
+                    android:gravity="center"
+                    android:background="@drawable/xzry_top">
+                    <ImageView 
+                        android:id="@+id/iv_xz"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/xzry_imge"/>
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_toRightOf="@+id/iv_xz"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:text="待选中人员"/>
+                    
+                </RelativeLayout>
+                <ListView
+                    android:id="@+id/lv_xzzxr_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1.5dp"
+                    android:layout_marginRight="1.5dp"
+                    android:background="#E9ECF5">
+                </ListView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+    
+
+</RelativeLayout>
+<!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/noti_mid_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:layout_margin="5dp" >
+        
+        <LinearLayout
+            android:id="@+id/lin_qjsq_row2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    style="@style/text_style"
+                    android:ems="5"
+                    android:layout_marginRight="0.5dp"
+                    android:background="#DFF7FB"
+                    android:text="部门选择" />
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    
+                    android:layout_toRightOf="@+id/textView1"
+                    android:background="#EEEEEE" />
+                <Spinner
+                    android:id="@+id/sp_bmxz"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:drawSelectorOnTop="true"
+                    android:ellipsize="marquee"
+                    android:layout_toRightOf="@+id/view4"
+                    android:layout_toLeftOf="@+id/tv_submit"
+                    android:background="#ffffff"
+                    android:paddingLeft="5dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:ems="4"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="0.5dp"
+                    android:background="#14b2ce"
+                    android:text="提   交" />
+                
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/lin_qjsq_row2"
+            android:layout_alignRight="@+id/lin_qjsq_row2"
+            android:layout_below="@+id/lin_qjsq_row2"
+            android:background="#EEEEEE" />
+        <LinearLayout
+            android:id="@+id/lin_qjsq_row3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/view5"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/noti_mid_bg" >
+                <TextView
+                    android:id="@+id/tv_dqbmry"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    style="@style/text_style"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="#DFF7FB"
+                    android:text="当前部门人员" />
+
+                <View
+                    android:id="@+id/view51"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    
+                    android:layout_below="@+id/tv_dqbmry"
+                    android:background="#EEEEEE" />
+
+                <ListView
+                    android:id="@+id/lv_ryxz_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/view51"
+                    android:divider="#14b2ce"
+                    android:dividerHeight="1px"
+                    android:listSelector="#14b2ce" >
+                </ListView>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/lv_ryxz_list"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#14b2ce" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                
+                android:background="@drawable/noti_mid_bg" >
+                <TextView
+                    android:id="@+id/tv_yxzry"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    style="@style/text_style"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="#DFF7FB"
+                    android:text="待选中人员" />
+
+                <View
+                    android:id="@+id/view61"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    
+                    android:layout_below="@+id/tv_yxzry"
+                    android:background="#EEEEEE" />
+                <ListView
+                    android:id="@+id/lv_xzzxr_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/view61"
+                    android:divider="#14b2ce"
+                    android:dividerHeight="1px"
+                    >
+                </ListView>
+
+                <View
+                    android:id="@+id/view62"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/lv_xzzxr_list"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#14b2ce" />
+            </RelativeLayout>
+            
+        </LinearLayout>    
+        
+    </RelativeLayout> -->

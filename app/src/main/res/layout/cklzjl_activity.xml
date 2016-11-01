@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+    <include 
+        android:id="@+id/title"
+        layout="@layout/title"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:layout_above="@+id/re_buttom"
+        android:layout_margin="5dp"
+        android:background="@drawable/noti_mid_bg">
+        <TextView
+            android:id="@+id/tv_ycl"
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="1.5dp"
+            android:layout_marginRight="1.5dp"
+            android:layout_marginTop="1.5dp"
+            android:background="#DFF7FB"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="已处理" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_ycl"
+            android:background="#EEEEEE" 
+            android:layout_marginLeft="1.5dp"
+            android:layout_marginRight="1.5dp"/>
+
+        <ListView
+            android:id="@+id/lv_ycl_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:divider="#00000000"
+            android:dividerHeight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="2dp"
+             >
+        </ListView>
+
+    </RelativeLayout>
+
+     <RelativeLayout
+         android:id="@+id/re_buttom"
+         android:layout_width="match_parent"
+         android:layout_height="130dp"
+         android:layout_alignParentBottom="true"
+         android:layout_margin="5dp"
+         android:background="@drawable/noti_mid_bg" >
+
+         <TextView
+             android:id="@+id/tv_dcl"
+             style="@style/text_style"
+             android:layout_width="match_parent"
+             android:layout_height="30dp"
+             android:layout_marginLeft="1.5dp"
+            android:layout_marginRight="1.5dp"
+            android:layout_marginTop="1.5dp"
+             android:background="#DFF7FB"
+             android:gravity="center_vertical|center_horizontal"
+             android:text="待处理" />
+         <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_dcl"
+            android:background="#EEEEEE" 
+            android:layout_marginLeft="1.5dp"
+            android:layout_marginRight="1.5dp"/>
+         <LinearLayout
+            android:id="@+id/lin_row1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/view2"
+            android:layout_alignRight="@+id/view2"
+            android:layout_below="@+id/view2"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    style="@style/text_style"
+                    android:ems="5"
+                    android:background="#DFF7FB"
+                    android:text="待处理环节" />
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="#EEEEEE" />
+                <TextView
+                    android:id="@+id/tv_dclhj"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    style="@style/text_style"
+                    android:layout_toRightOf="@+id/view3"
+                    android:background="#ffffff"
+                     />
+                
+            </RelativeLayout>   
+        </LinearLayout>
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/view2"
+            android:layout_alignRight="@+id/view2"
+            android:layout_below="@+id/lin_row1"
+            android:background="#EEEEEE" />
+        <LinearLayout
+            android:id="@+id/lin_row2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/view2"
+            android:layout_alignRight="@+id/view2"
+            android:layout_below="@+id/view4"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    style="@style/text_style"
+                    android:ems="5"
+                    android:background="#DFF7FB"
+                    android:text="待处理用户" />
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    
+                    android:layout_toRightOf="@+id/textView3"
+                    android:background="#EEEEEE" />
+                <TextView
+                    android:id="@+id/tv_dclyh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    style="@style/text_style"
+                    android:layout_toRightOf="@+id/view5"
+                    android:background="#ffffff"
+                     />
+                
+            </RelativeLayout>   
+        </LinearLayout>
+        <View
+            android:id="@+id/view6"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/view2"
+            android:layout_alignRight="@+id/view2"
+            android:layout_below="@+id/lin_row2"
+            android:background="#EEEEEE" />
+        <LinearLayout
+            android:id="@+id/lin_row3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/view2"
+            android:layout_alignRight="@+id/view2"
+            android:layout_below="@+id/view6"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" 
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    style="@style/text_style"
+                    android:ems="5"
+                    android:background="#DFF7FB"
+                    android:text="收到时间" />
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    
+                    android:layout_toRightOf="@+id/textView4"
+                    android:background="#EEEEEE" />
+                <TextView
+                    android:id="@+id/tv_sdsj"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    style="@style/text_style"
+                    android:layout_toRightOf="@+id/view7"
+                    android:background="#ffffff"
+                     />
+                
+            </RelativeLayout>   
+        </LinearLayout>
+        <View
+            android:id="@+id/view8"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/view2"
+            android:layout_alignRight="@+id/view2"
+            android:layout_below="@+id/lin_row3"
+            android:background="#EEEEEE" />
+     </RelativeLayout>
+
+</RelativeLayout>

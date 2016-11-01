@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/rela_gray_bg">
+    
+    <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                 >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:text="操作人：" />
+
+                <TextView
+                    android:id="@+id/tv_czr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView3"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    
+                     />
+
+                    
+
+            </RelativeLayout>
+            <View
+                android:id="@+id/view7"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                
+                android:background="#DCDCDC" />
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent" 
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp">
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:text="操作环节：" />
+
+                <TextView
+                    android:id="@+id/tv_czhj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView4"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    />
+
+                    
+            </RelativeLayout>
+            
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/linearLayout1"
+            android:background="#DCDCDC" />
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            
+            android:layout_below="@+id/view1"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                 >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:text="收到时间：" />
+
+                <TextView
+                    android:id="@+id/tv_sdsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView5"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                     />
+
+                    
+                
+            </RelativeLayout>
+            <View
+                android:id="@+id/view8"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                
+                android:background="#DCDCDC" />
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent" 
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp">
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:text="送出时间：" />
+
+                <TextView
+                    android:id="@+id/tv_scsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView6"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                     />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            
+            android:layout_below="@+id/linearLayout2"
+            android:background="#DCDCDC" />
+        
+        
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            
+            android:layout_below="@+id/view2"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+                 
+                <TextView
+                    android:id="@+id/textView64"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="2dp"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:text="送与环节：" />
+
+                <TextView
+                    android:id="@+id/tv_syhj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="5dp"
+                    android:layout_toRightOf="@+id/textView64"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                     />
+
+                    
+            </RelativeLayout>
+        </LinearLayout>
+
+        
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+    <include 
+        android:id="@+id/title"
+        layout="@layout/title"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_margin="5dp" >
+        <TextView
+            android:id="@+id/tv_zwkyhd"
+            style="@style/tv_submit_hdxz_bg"
+            android:visibility="gone"
+            android:text="提  交" />
+        <ListView
+            android:id="@+id/lv_hdxz_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:divider="#00000000"
+            android:dividerHeight="12dp"
+            android:listSelector="#14b2ce" >
+        </ListView>
+        <!-- <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/lv_hdxz_list"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#14b2ce" /> -->
+        
+    </RelativeLayout>
+
+</RelativeLayout>

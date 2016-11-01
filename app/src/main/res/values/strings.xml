@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">移动办公</string>
+    <string name="app_name1">公告消息</string>
+    <string name="app_name2">会议室申请</string>
+    <string name="app_name3">内网新闻</string>
+    <string name="app_name4">内部发文</string>
+    <string name="app_name5">内部收文</string>
+    <string name="app_name6">请假待办</string>
+    <string name="app_name7">用车待办</string>
+    <string name="app_name8">超审限提醒</string>
+    <string name="app_name9">公出待办</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="gonggao">公告</string>
+    <string name="daiban">我的待办</string>
+    <string name="login_name_hint">请输入用户名</string>
+    <string name="login_pwd_hint">*******</string>
+    <string name="login_btn">登          录</string>
+    <string name="edit_search_hint">请输入查询关键字</string>
+    <string name="computer_text">计算机设备领用</string>
+    <string name="car_text">用车申请</string>
+    <string name="inner_text">内部收文</string>
+    <string name="outer_text">内部发文</string>
+    <string name="leave_text">请假申请</string>
+    <string name="isnull">案件号和密码不能为空</string>
+    <string name="noticeisnull">搜索关键字不能为空</string>
+    <string name="plan_department">拟稿单位：</string>
+    <string name="plan_editer">拟  稿  人：</string>
+    <string name="plan_tilte">标        题：</string>
+    <string name="plan_keyword">关  键  字：</string>
+    <string name="plan_detail1">院领导批示</string>
+    <string name="plan_detail2">部门领导意见</string>
+    <string name="plan_detail3">部门办理意见</string>
+    <string name="plan_detail4">其他部门意见</string>
+    <string name="dia_et_hint">请输入说明文字，字数不超过100字</string>
+    <string name="dia_btn_save">保     存</string>
+    <string name="dia_btn_translate">上     传</string>
+    <string name="dia_isnull">输入内容不能为空</string>
+
+    
+</resources>
